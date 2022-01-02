@@ -3,8 +3,8 @@
 :root {
   --grid-cols: 1;
   --grid-rows: 1;
-  --grid-width: 25px;
-  --grid-height: 25px;
+  --grid-width: 30px;
+  --grid-height: 30px;
 }
 
 #grid {
