@@ -19,3 +19,36 @@ function changeGridToBlack(e) {
   //Use event delegation
   e.target.style.backgroundColor = "black";
 }
+
+// --|| Restart grid
+
+const restartBtn = document.querySelector("#restart-btn");
+restartBtn.addEventListener("click", function () {
+  const gridSize = window.prompt("Grid size: ");
+  removeGrid();
+  makeGrid(gridSize, gridSize);
+  //clearGrid();
+});
+
+function removeGrid() {
+  const cells = document.querySelectorAll(".grid-item");
+
+  cells.forEach(function (cell) {
+    cell.remove();
+  });
+}
+
+// --|| Clear grid
+
+const clearBtn = document.querySelector("#clear-btn");
+clearBtn.addEventListener("click", function () {
+  clearGrid();
+});
+
+function clearGrid() {
+  const cells = document.querySelectorAll(".grid-item");
+
+  cells.forEach(function (cell) {
+    cell.style.backgroundColor = "white";
+  });
+}
