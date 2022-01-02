@@ -7,7 +7,7 @@
   --grid-height: 25px;
 }
 
-#container {
+#grid {
   display: grid;
   /* Defines the track sizing function*/
   grid-template-rows: repeat(var(--grid-rows), var(--grid-height));
